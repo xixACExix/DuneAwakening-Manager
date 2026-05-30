@@ -1,0 +1,5 @@
+logs/
+run/
+backups/
+*.log
+Source files/DuneManager-v*/
