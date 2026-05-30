@@ -26,24 +26,12 @@ DuneManager by Ace is a Windows GUI helper for the Dune Awakening Self-Hosted Se
 
 The manager calls the official Dune Awakening self-hosted server scripts from the local Steam server package. It does not include or redistribute the game server package.
 
-## Upload Checklist
+## Download
 
-Attach this file to a GitHub release:
+Download and extract:
 
 ```text
 DuneManager-v1.0.0.zip
-```
-
-Suggested tag:
-
-```text
-v1.0.0
-```
-
-Suggested release title:
-
-```text
-DuneManager by Ace v1.0.0
 ```
 
 ## License / Use
