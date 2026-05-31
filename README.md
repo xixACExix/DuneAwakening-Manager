@@ -1,4 +1,4 @@
-# DuneManager by Ace
+# Simple Dune Awakening Manager by Ace
 
 Local Windows GUI manager for the Dune Awakening Self-Hosted Server package.
 
@@ -6,21 +6,21 @@ Local Windows GUI manager for the Dune Awakening Self-Hosted Server package.
 
 For normal use, download the latest release ZIP:
 
-[DuneManager by Ace v1.0.0](https://github.com/xixACExix/DuneAwakening-Manager/releases/tag/v1.0.0)
+[Simple Dune Awakening Manager by Ace v1.0.0](https://github.com/xixACExix/Simple-Dune-Awakening-Manager/releases/tag/v1.0.0)
 
 The source files in this repository mirror the release package so they can be reviewed before downloading.
 
 ## Run
 
 ```powershell
-.\Start-DuneManager.bat
+.\Start-Simple-Dune-Awakening-Manager.bat
 ```
 
 The launcher opens the GUI and requests Administrator access automatically. Administrator access is required for Hyper-V VM setup, VM start/stop, switch setup, and repair actions.
 
 ## Server Package Detection
 
-DuneManager looks for the official Steam server package through Steam registry data, Steam `libraryfolders.vdf`, and common Steam library paths across local drives. You can override detection by setting:
+Simple Dune Awakening Manager looks for the official Steam server package through Steam registry data, Steam `libraryfolders.vdf`, and common Steam library paths across local drives. You can override detection by setting:
 
 ```powershell
 $env:DUNE_SERVER_ROOT = "<your Steam library>\steamapps\common\Dune Awakening Self-Hosted Server"
@@ -53,7 +53,7 @@ The watchdog does not delete saves or reinstall the server.
 
 ## Settings
 
-1. Open `Start-DuneManager.bat`.
+1. Open `Start-Simple-Dune-Awakening-Manager.bat`.
 2. Go to `Settings`.
 3. Press `Load Current`.
 4. Edit the values you want.
@@ -66,7 +66,7 @@ The settings action backs up `UserEngine.ini` and `UserGame.ini` inside the VM b
 Use `Actions` -> `Local Backup` to create a reinstall-safe backup under:
 
 ```text
-DuneManager\backups
+Simple-Dune-Awakening-Manager\backups
 ```
 
 The local backup includes the official battlegroup database dump, the battlegroup YAML when available, and the `UserEngine.ini` / `UserGame.ini` settings edited by the manager.
@@ -75,7 +75,7 @@ To restore after a reinstall:
 
 1. Run first-time setup so the VM and battlegroup exist again.
 2. Go to `Actions` -> `Restore Backup`.
-3. Select the `.tar.gz` archive from `DuneManager\backups`.
+3. Select the `.tar.gz` archive from `Simple-Dune-Awakening-Manager\backups`.
 4. Confirm the restore warning.
 
 Restore stops the battlegroup, imports the selected database backup, restores manager-edited ini files when present, applies default user settings, and starts the battlegroup again.
@@ -94,7 +94,7 @@ The PowerShell source is published in the repository root for review. The releas
 
 ## License / Use
 
-DuneManager by Ace may be used, copied, modified, and shared for personal, private, or community Dune Awakening self-hosted server management.
+Simple Dune Awakening Manager by Ace may be used, copied, modified, and shared for personal, private, or community Dune Awakening self-hosted server management.
 
 Do not sell it, bundle it as paid software, or present it as an official Funcom tool. Dune Awakening and related names belong to their owners.
 
